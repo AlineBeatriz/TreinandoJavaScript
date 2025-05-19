@@ -31,3 +31,23 @@ const calculoDeIMC = (peso, altura) => {
     //toFixed(2) serve para retornar apenas 2 casas decimas (00.00) arredonda o valor
 }
 console.log(calculoDeIMC(61,1.69));
+
+// 6º Calcule o valor de um produto com 30% de desconto.
+const descontao = (valorProduto) => {
+    const desconto = valorProduto * 0.30;
+    return valorProduto - desconto;
+}
+console.log("Valor com desconto: " + "R$" + descontao(50.00).toFixed(2));
+
+// 7º Verifique se um número é múltiplo de 5.
+const multiploDeCinco = (numero) => {
+    return (numero  % 5 === 0) ? "Múltiplo de 5" : "Não múltiplo de 5";
+}
+console.log(multiploDeCinco(17));
+
+// 8º Calcule quantos dias úteis você trabalha por mês.
+const diasUteisDeTrabalho = (diasUteis) => {
+    const semanasDoMes = 4;
+    return diasUteis * semanasDoMes;
+}
+console.log("Dias úteis trabalhado por mêS: " + diasUteisDeTrabalho(5));
