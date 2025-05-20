@@ -51,3 +51,21 @@ const diasUteisDeTrabalho = (diasUteis) => {
     return diasUteis * semanasDoMes;
 }
 console.log("Dias úteis trabalhado por mêS: " + diasUteisDeTrabalho(5));
+
+// 9º Dado o valor de um produto e a quantidade, calcule o total da compra.
+const totalDaCompra = (valorProduto, quantidade) => {
+    return valorProduto * quantidade;
+}
+console.log("Sua compra deu: " + "R$" + totalDaCompra(30,2).toFixed(2));
+
+// 10º Crie uma função que retorna "positivo", "negativo" ou "zero" com base no número.
+function retornoPositivoOuNegativo(numero){
+    if(numero > 0){
+        console.log("Positivo");
+    }else if(numero < 0){
+        console.log("Negativo");
+    }else{
+        console.log("Zero");
+    }
+}
+retornoPositivoOuNegativo(0)
