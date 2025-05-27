@@ -24,6 +24,8 @@ function simuladorINSS(salario){
     }
 }
 simuladorINSS(1900.50);
+/*Comentario sobre o exercício:
+neste exercício aprendi a importancia 'do menor <= para o Maior =>' e usei o 'toFixed(2)' para mostra duas casas decimais */
 
 //3. Simule um caixa eletrônico: dado um valor, informe quantas notas de 100, 50, 10 e 1 serão entregues.
 function caixaEletronico(valor) {
@@ -42,7 +44,37 @@ function caixaEletronico(valor) {
     console.log("Notas de 50: " + notas50);
     console.log("Notas de 10: " + notas10);
     console.log("Notas de 1: " + notas1);
-}
+}caixaEletronico(280);
+    /*Comentario sobre o exercício:
+    neste exercício usamos o Math.floor para retorna o valor inteiro sem o resto %. */
 
-caixaEletronico(280);
+// Faça um cronômetro que conte de 1 a 10 no console, com setTimeout.
+for (let i = 1; i <= 10; i++) {
+    setTimeout(function() {
+      console.log(i);
+    }, i * 1000);
+  }
+    /*Comentario sobre o exercício:
+    neste exercício usamor a opção de loop o 'for' usado repetir a contagem com acrescimo e usei 'setTimeout' para da uma pausa de 1 seg na resposta do console para cada número */
 
+//Crie uma calculadora que recebe dois valores e um operador (+, -, *, /).
+function calculadora(valor1,operador, valor2){
+    if(operador === "+"){
+        resultado = valor1 + valor2;
+        
+    }else if(operador === "-"){
+        resultado = valor1 - valor2;
+        
+    }else if(operador === "*"){
+        resultado = valor1 * valor2;
+        
+    }else if(operador === "/"){
+        resultado = valor1 / valor2;
+
+    }else{
+        return "Operador inválido!"
+    }
+    return resultado;
+}console.log(calculadora(20, "*", 20))
+    /*Comentario sobre o exercício:
+    neste exercício é importante atribuir os parametros e usar o 'if e else' para fazer a verificação */
